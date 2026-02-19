@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html chapter 5 -Rameshor Shrestha</title>
+</head>
+
+<body style="background-color: tan;">
+    <h1><span style="background-color: rgb(222, 187, 12);">Html chapter 5 :</span></h1>
+    <h2> 1. The use of the image tags in html </h2>
+    <p> So the image is used in the html to show the particular image in the website like this one : </p>
+
+    <img src="img.png" width="280" alt=" Image of boy learning animated ">
+    <h3> This image was formed by the following code in the html section </h3>
+    <pre>
+&lt;body&gt;
+  &lt;img src="img.png" width="280" alt="Image of boy learning animated"&gt;
+&lt;/body&gt;
+</pre>
+</body>
+    <h3>If the file wasnt found in the computer it would display the words that is written in the alt attribute like :
+    </h3>
+    <img src="img2.png" width="280" alt=" Image of boy learning animated ">
+    <h3>Use of the width and the image attributes : </h3>
+    <p> If we set one of the attributes inside a img tag i.e(width or height ) it would self adjust the other thing like
+        : </p>
+    <img src="img.png" width="200" alt=" Image of boy learning animated ">
+    <p> This image was formed by the code :</p>
+    <pre style="background-color:rgb(160, 138, 123);">
+&lt;body&gt;
+ &lt;img src="img.png" width="200" alt="Image of boy learning animated"&gt;
+&lt;/body&gt;
+    </pre>
+    <p>Here the width is 200 and height is adjusted automaticaly by the system if we adjust both the height and the
+        width manually it would cause to make the image look strechy like : </p>
+    <img src="img.png" width="200" height="100" alt=" Image of boy learning animated ">
+
+
+    <h2> 2. The use of table in html</h2>
+    <p> we use the table tag to organize the things in the html . The table without any css is like :</p>
+    <table border="1" >
+        <caption> Employees details</caption>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th> Phone</th>
+                <th> Address</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th> Rameshor</th>
+                <th>9878787878</th>
+                <th>Ranibas,Gulmi</th>
+            </tr>
+            <tr>
+                <th>Shresh</th>
+                <th>985709873</th>
+                <th>Kathmandu,Nepal</th>
+            </tr>
+        </tbody>
+
+        <tfooter>
+
+
+        </tfooter>
+    </table>
+    <p>
+        Here is the code of the following above table :
+    <pre>
+&lt;table border="1" &gt;
+    &lt;caption&gt; Employees details&lt;/caption&gt;
+    &lt;thead&gt;
+        &lt;tr&gt; 
+            &lt;th&gt;Name&lt;/th&gt;
+            &lt;th&gt;Phone&lt;/th&gt;
+            &lt;th&gt;Address&lt;/th&gt;
+        &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+        &lt;tr&gt;
+            &lt;th&gt;Rameshor&lt;/th&gt;
+            &lt;th&gt;9878787878&lt;/th&gt;
+            &lt;th&gt;Ranibas,Gulmi&lt;/th&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;th&gt;Shresh&lt;/th&gt;
+            &lt;th&gt;985709873&lt;/th&gt;
+            &lt;th&gt;Kathmandu,Nepal&lt;/th&gt;
+        &lt;/tr&gt;
+    &lt;/tbody&gt;
+    &lt;tfooter&gt;
+    &lt;/tfooter&gt;
+&lt;/table&gt;
+</pre>
+    </p>
+    <p> Here the table is formed by the table tag &lt;table&gt; and &lt;/table&gt;.
+        <br>
+        The caption tag above is used for telling what the table is about i.e (Employees detailes given above in the
+        code)
+
+        <br>
+        The &lt;tr&gt; and &lt;/tr&gt; is used for forming a new row and &lt;th&gt; and &lt;/th&gt; is used for adding
+        elements in that row simultaneously .
+        <br>
+        the colspan tag tells how much rows or coloumns of space the element would occupy in the table(i.e )
+    <ul>
+        <li> colspan = How many coloumn it would occupy</li>
+        <li> colspan = How many rows it would occupy</li>
+
+    </ul>
+    Here is the demo code and the result :
+    <br>
+    Demo code :
+    <pre>
+&lt;th colspan="2" rowspan="1"&gt; Rameshor&lt;/th&gt;
+</pre>
+    <br>
+    <br>
+    <table border="1">
+        <caption> Employees details</caption>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th> Phone</th>
+                <th> Address</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th colspan="2" rowspan="1"> Rameshor</th>
+                <th>9878787878</th>
+                <th>Ranibas,Gulmi</th>
+            </tr>
+            <tr>
+                <th>Shresh</th>
+                <th>985709873</th>
+                <th>Kathmandu,Nepal</th>
+            </tr>
+        </tbody>
+
+        <tfooter>
+
+
+        </tfooter>
+    </table>
+    <br>
+
+    Here the Rameshor element is occupying 2 coloumn and 1 rows in the table...
+    </p>
+    <h2> 3. Lists in the Html</h2>
+    <p> The use of list in the html is done to make the elements in the fixed oder like given in table:
+    <table border="1">
+        <caption>HTML List Types</caption>
+
+        <thead>
+            <tr>
+                <th>List Type</th>
+                <th>Sample Syntax</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Ordered List</td>
+                <td>
+                    <ol>
+                        <li>First Item</li>
+                        <li>Second Item</li>
+                        <li>Third Item</li>
+                    </ol>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Unordered List</td>
+                <td>
+                    <ul>
+                        <li>Apple</li>
+                        <li>Banana</li>
+                        <li>Mango</li>
+                    </ul>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Definition List</td>
+                <td>
+                    <dl>
+                        <dt>HTML</dt>
+                        <dd>HyperText Markup Language</dd>
+
+                        <dt>CSS</dt>
+                        <dd>Cascading Style Sheets</dd>
+                    </dl>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    </p>
+    <dl>
+        <dt>For the odered list this code was used :</dt>
+        <dd>
+            <pre>
+&lt;ol&gt;
+    &lt;li&gt;First Item&lt;/li&gt;
+    &lt;li&gt;Second Item&lt;/li&gt;
+    &lt;li&gt;Third Item&lt;/li&gt;
+&lt;/ol&gt;
+</pre>
+        </dd>
+
+
+         <dt>For the unodered list this code was used :</dt>
+        <dd>
+            <pre>
+&lt;ul&gt;
+    &lt;li&gt;Apple&lt;/li&gt;
+    &lt;li&gt;Banana&lt;/li&gt;
+    &lt;li&gt;Grapes&lt;/li&gt;
+&lt;/ul&gt;
+</pre>
+        </dd>
+          <dt>For the defination list this code was used :</dt>
+        <dd>
+            <pre>
+&lt;dl&gt;
+    &lt;dt&gt;HTML&lt;/dt&gt;
+    &lt;dd&gt;HyperText Markup Language&lt;/dd&gt;
+
+    &lt;dt&gt;CSS&lt;/dt&gt;
+    &lt;dd&gt;Cascading Style Sheets&lt;/dd&gt;
+&lt;/dl&gt;
+</pre>
+        </dd>
+    </dl>
+    <h3>Customization of the bullet points / Html list </h3>
+    <h4>For unodered list :</h4>
+    <p>
+        <pre>
+        &lt;ul type = "......"&gt;
+        </pre>
+        use variable "disc" for the round default <br>
+        use variable "square " for the square bullet <br>
+        use variable "circle" for the circle bullet <br>
+     <h4>For odered list :</h4>
+        <pre>
+        &lt;ol type = "...."&gt;
+        </pre>
+         1 is for the numerical value in type variable <br>
+        i is for the small roman  value in type variable <br>
+        I is for the capital roman value in type variable <br>
+        A is for the capital alphabetical value in type variable<br> 
+        a is for the small alphabetical value in type variable <br>
+       
+
+    </p>
+</body>
+
+</html>
